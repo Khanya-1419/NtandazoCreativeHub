@@ -1,0 +1,43 @@
+﻿body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding-top: 100px;
+}
+
+.navbar {
+    background-color: #ffffffee;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.flying-text {
+    animation: flyIn 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes flyIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.btn-lively {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+    .btn-lively:hover {
+        background: linear-gradient(to right, #0072ff, #00c6ff);
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 114, 255, 0.4);
+    }
